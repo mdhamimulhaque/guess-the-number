@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="./public/output.css">
+</head>
+
+<body class="font-mono max-w-md flex flex-col justify-center m-auto h-screen p-2 text-center" id="body">
+    <header class="mb-8 ">
+        <h2 class="text-4xl  font-bold mb-8">Guess The Number</h2>
+        <span class="number_box  p-6 bg-blue-600 text-white text-4xl" id="random_number">
+            ??
+        </span>
+    </header>
+
+    <main>
+       <section class="text-md">
+        <h4 class="text-xl sm:text-md font-bold">Choose between number :</h4>
+           <div class="button_box  mt-4 text-white">
+            <button class="px-5 rounded-md py-2 bg-purple-400" id="one_five">1-5</button>
+            <button class=" px-5 rounded-md py-2 bg-purple-400" id="six_ten">6-10</button>
+            <button class=" px-5 rounded-md py-2 bg-purple-400" id="ele_fifteen">11-16</button>
+           </div>
+       </section>
+       <section class="text-lg  mt-4">
+               <h4 id="result">let's play</h4>
+               <h4 >Attempt left <span id="attempt">3</span></h4>
+               <h4 >Highest score <span id="height_score">0</span></h4>
+               
+       </section>
+    </main>
+    <footer class=" mt-4">
+        <button class="text-white px-5 rounded-md py-2 bg-pink-400" id="play_Again">Play Again</button>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
